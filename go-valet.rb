@@ -14,7 +14,7 @@ class GoValet < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.1/go-valet_Darwin_x86_64.tar.gz"
-      sha256 "603e0349ba2c215df2256c61388733c4a93ebe657243735232f03370e7c88876"
+      sha256 "5b9a60b149a499ef4e32a7adf87e3a915fe0071bd0ea7a9420a9ad344f06f77d"
 
       def install
         bin.install "go-valet"
@@ -22,7 +22,7 @@ class GoValet < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.1/go-valet_Darwin_arm64.tar.gz"
-      sha256 "eda7f221cc41c545327f0b5fe220bc2dc7f19ac2b56671c12333dbc00c8b4ea4"
+      sha256 "e29e8a0f5b0066a215c1e000294d9ca7dd8dab02b481c189c4a427c020195a60"
 
       def install
         bin.install "go-valet"
@@ -33,14 +33,14 @@ class GoValet < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.1/go-valet_Linux_x86_64.tar.gz"
-      sha256 "a995a09cca82483da8cfcb0f6e3f31456d106e0c9db2c6146d8deff9addc5202"
+      sha256 "c1d94111e4a28ade78c251e2091b7470253a24d3415f00e155dc05421f8becf5"
       def install
         bin.install "go-valet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.1/go-valet_Linux_arm64.tar.gz"
-      sha256 "2463ec856b56de3584b2313f5bffd6477336dff5e8415bfe84151dde285b865f"
+      sha256 "c162e0f00e39490782e5edbde0040cce7dac1afbac9e29ac952a9d6bb0617eec"
       def install
         bin.install "go-valet"
       end
