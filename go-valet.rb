@@ -5,7 +5,7 @@
 class GoValet < Formula
   desc "A Laravel Valet clone for Go"
   homepage "https://github.com/arifnurulhakim/go-valet"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   depends_on "air"
@@ -13,16 +13,16 @@ class GoValet < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.3/go-valet_Darwin_x86_64.tar.gz"
-      sha256 "dda59ebf83d2a172f1bd814d7b46acf17adbf44f91d8e650f196f56515fb7ce8"
+      url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.4/go-valet_Darwin_x86_64.tar.gz"
+      sha256 "824e6fb8c5bc9921303728ca7fe5386969889a7c5cb0bb3a26a9df416002e016"
 
       def install
         bin.install "go-valet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.3/go-valet_Darwin_arm64.tar.gz"
-      sha256 "465ef3f40deb10a0d69e39c882f944d6831ff4ff84a4d4a758d4629f5e37be2b"
+      url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.4/go-valet_Darwin_arm64.tar.gz"
+      sha256 "e8570d3c025cfb0948a25f8a69dc2ea188499d90e6017c8ff50fe00697731309"
 
       def install
         bin.install "go-valet"
@@ -32,15 +32,15 @@ class GoValet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.3/go-valet_Linux_x86_64.tar.gz"
-      sha256 "f0b0a6bc97ce74bb8797c94e3fbbd9b0a4033c1d84f1db1a8f6ffa742daa2b25"
+      url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.4/go-valet_Linux_x86_64.tar.gz"
+      sha256 "ec748dcf13d3de963e358ee03ec0c19fe0776e23f9a6ec583ce138079a2949d4"
       def install
         bin.install "go-valet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.3/go-valet_Linux_arm64.tar.gz"
-      sha256 "a50ae0b8ba8c2ed1a60d24ffb0d35bf6157b172c0174e5c72b3b47d3ba722a2c"
+      url "https://github.com/arifnurulhakim/go-valet/releases/download/v0.0.4/go-valet_Linux_arm64.tar.gz"
+      sha256 "cff2c4495172214de1f7eafa707e1f4301342cbd98e774f59acf81531b22c45f"
       def install
         bin.install "go-valet"
       end
